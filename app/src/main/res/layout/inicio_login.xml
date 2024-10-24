@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/iniciar_ses"
+        android:layout_width="360dp"
+        android:layout_height="800dp"
+        android:background="#FFFFFF"
+        android:clipToOutline="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <View
+        android:id="@+id/img_inicio"
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img_inicio_f"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button"
+        android:clipToOutline="true"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_inicio"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/boton_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="4sp"
+            android:text="@string/iniciar_sesion"
+            android:textAppearance="@style/label_text" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

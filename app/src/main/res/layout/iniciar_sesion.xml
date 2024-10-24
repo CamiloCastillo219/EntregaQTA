@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/top_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#5AE4A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageButton
+            android:id="@+id/back_arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/arrow_back_24px"
+            android:elevation="2dp" />
+
+        <TextView
+            android:id="@+id/Texto_grande"
+            android:layout_width="268dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/back_arrow"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:text="@string/iniciar_sesion" />
+
+        <ImageButton
+            android:id="@+id/xbuton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/Texto_grande"
+            android:background="@drawable/icon"
+            android:elevation="2dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Usuario_lable"
+        android:layout_width="57dp"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:text="@string/usuario"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="212dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pasword_label"
+        android:layout_width="57dp"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/roboto"
+        android:gravity="center|left"
+        android:text="@string/usuario"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="312dp"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/text_field_"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintTop_toBottomOf="@+id/top_app_bar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp">
+
+        <TextView
+            android:id="@+id/Usuario"
+            android:layout_width="268dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|left"
+            android:text="@string/usuario" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/constraseña"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/border_color"
+        app:layout_constraintTop_toBottomOf="@+id/text_field_"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp">>
+        <TextView
+            android:id="@+id/contraseña"
+            android:layout_width="268dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto"
+            android:gravity="center|left"
+            android:text="@string/contrase_a" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/constraseña"
+        tools:layout_editor_absoluteX="158dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
